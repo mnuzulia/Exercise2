@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Let's Count</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+
+</head>
+
+<body>
+    <div class="cal-wrapper">
+        <br><br><br> <br> <br>
+        <div class=" cal-content-wrapper">
+            <form name="thisCal" class="form-cal">
+                <tr>
+                    <td colspan="4">
+                        <div class="little-decor"></div>
+                        <div class="outwin-wrapper"><input type="text" name="result" placeholder="0"
+                                id="output-window"></input></div>
+                    </td>
+                </tr>
+
+                <tr>
+
+                    <td><button id="percent" type="button" value="%" class="btn grey"
+                            onclick="takeValue(document.getElementById('percent').value)">%</button>
+                    </td>
+                    <td><button id="clear" type="button" value="" class="btn grey"
+                            onclick="clearValue(document.getElementById('clear').value)">C</button></td>
+                    <td><button id="delete" type="button" value="dfs" class="btn grey"
+                            onclick="deleteValue(document.getElementById('delete').value)">←</button></td>
+
+                    <td><button id="divide" type="button" value="/" class="btn blue"
+                            onclick="takeValue(document.getElementById('divide').value)">/</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><button id="seven" type="button" value="7" class="btn"
+                            onclick="takeValue(document.getElementById('seven').value)">7</button></td>
+                    <td><button id="eight" type="button" value="8" class="btn"
+                            onclick="takeValue(document.getElementById('eight').value)">8</button></td>
+                    <td><button id="nine" type="button" value="9" class="btn"
+                            onclick="takeValue(document.getElementById('nine').value)">9</button></td>
+
+                    <td><button id="cross" type="button" value="*" class="btn blue"
+                            onclick="takeValue(document.getElementById('cross').value)">*</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><button id="four" type="button" value="4" class="btn"
+                            onclick="takeValue(document.getElementById('four').value)">4</button></td>
+                    <td><button id="five" type="button" value="5" class="btn"
+                            onclick="takeValue(document.getElementById('five').value)">5</button></td>
+                    <td><button id="six" type="button" value="6" class="btn"
+                            onclick="takeValue(document.getElementById('six').value)">6</button></td>
+
+                    <td><button id="minus" type="button" value="-" class="btn blue"
+                            onclick="takeValue(document.getElementById('minus').value)">-</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><button id="one" type="button" value="1" class="btn"
+                            onclick="takeValue(document.getElementById('one').value)">1</button></td>
+                    <td><button id="two" type="button" value="2" class="btn"
+                            onclick="takeValue(document.getElementById('two').value)">2</button></td>
+                    <td><button id="three" type="button" value="3" class="btn"
+                            onclick="takeValue(document.getElementById('three').value)">3</button></td>
+
+                    <td><button id="plus" type="button" value="+" class="btn blue"
+                            onclick="takeValue(document.getElementById('plus').value)">+</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><button id="min-plus" type="button" value="-" class="btn"
+                            onclick="minPlusNum(document.getElementById('min-plus').value)">+/-</button>
+                    </td>
+                    <td><button id="zero" type="button" value="0" class="btn"
+                            onclick="takeValue(document.getElementById('zero').value)">0</button></td>
+                    <td><button id="dot" type="button" value="." class="btn"
+                            onclick="takeValue(document.getElementById('dot').value)">.</button></td>
+                    <td><button id="equal" type="button" value="=" class="btn peach"
+                            onclick="calculateResult()">=</button>
+                    </td>
+                </tr>
+
+            </form>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
